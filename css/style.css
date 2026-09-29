@@ -188,6 +188,17 @@ header .search-field i {
     max-width: 500px;
 }
 
+@media (max-width: 767px) {
+    .landing .text {
+        width: 100%;
+    }
+
+    .landing .text .content {
+        max-width: 100%;
+    }
+
+}
+
 .landing .text h2 {
     font-size: 32px;
     font-weight: normal;
@@ -198,6 +209,49 @@ header .search-field i {
 .landing .text p {
     font-size: 14px;
     line-height: 2;
+}
+
+.landing .change-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .landing .change-background {
+        display: none;
+    }
+}
+
+.landing .fa-angle-left {
+    left: 20px;
+}
+
+.landing .fa-angle-right {
+    right: 20px;
+}
+
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.bullets li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 
