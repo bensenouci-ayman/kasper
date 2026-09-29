@@ -1,3 +1,6 @@
+:root {
+    --main-color: #19c8fa;
+}
 /* Resets */
 *, 
 *::after,
@@ -15,6 +18,7 @@ html {
 
 body {
     font-family: "Work Sans", sans-serif;
+    background-color: black;
 }
 
 /* End Resets */
@@ -41,4 +45,71 @@ body {
     .container {
         width: 1170px;
     }
+}
+
+/* HEADER STYLE */
+
+header .container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container::after {
+    content: "";
+    background-color: #a2a2a2;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+}
+
+header .logo img {
+    height: 35px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li a {
+    padding: 40px 10px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .5s;
+    position: relative;
+    z-index: 2;
+}
+
+header nav li a:hover,
+header nav li a.active {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+header .search-field {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+header .search-field i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
