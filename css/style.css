@@ -1,6 +1,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 145 / 70%);
+    --section-padding: 100px;
 }
 /* Resets */
 *, 
@@ -22,6 +23,58 @@ body {
 }
 
 /* End Resets */
+
+/* Start Components */
+
+.main-heading {
+    text-align: center;
+}
+
+.main-heading h2 {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.main-heading h2::before {
+    content:'';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    bottom: -30px;
+    background-color: #333;
+    width: 120px;
+
+}
+
+.main-heading h2::after {
+    content:''; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -36px;
+    background-color: white;
+}
+
+.main-heading p {
+    width: 550px;
+    color: #777;
+    text-align: center;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+}
+
+
+/* End Components */
 
 .container {
     padding: 0 15px;
@@ -254,10 +307,58 @@ header .search-field i {
     border-color: var(--main-color);
 }
 
-
-
-
-
-
-
 /* END LANDING */
+
+/* START SERVICES */
+
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+@media (min-width: 768px) {
+    .services .services-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 60px 40px;
+    }
+}
+
+.services-wrapper .srv-card {
+    display: flex;
+}
+
+.services-wrapper .srv-card i {
+    margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+    .services-wrapper .srv-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+    .services-wrapper .srv-card i {
+        margin: 0 0 30px;
+    }
+}
+
+
+.services-wrapper .srv-card h3 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+.services-wrapper .srv-card p {
+    color: #777;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+/* END SERVICES */
