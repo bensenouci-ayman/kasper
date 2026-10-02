@@ -294,7 +294,7 @@ header .search-field i {
     list-style: none;
 }
 
-.bullets li {
+.landing .bullets li {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -302,7 +302,7 @@ header .search-field i {
     margin-right: 10px;
 }
 
-.bullets li.active {
+.landing .bullets li.active {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
@@ -662,3 +662,98 @@ header .search-field i {
 
 
 /* END STATS */
+
+/* START OUR-SKILLS */
+
+.our-skills {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.our-skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+    .our-skills .container > div {
+        flex-basis: 45%;
+    }
+}
+
+.our-skills .container > div > h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.our-skills .container > div > p {
+    color: #777;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+
+.our-skills .testimonials .card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.our-skills .testimonials .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+@media (max-width: 767px) {
+    
+    .our-skills .testimonials .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .our-skills .testimonials .card img {
+        margin: 0 auto 20px;
+    }
+}
+
+.our-skills .testimonials .card-content {
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+
+.our-skills .testimonials .card-content p {
+    color: #777;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.our-skills .testimonials .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+
+.our-skills .testimonials .bullets li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.our-skills .testimonials .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+
+
+
+/* END OUR-SKILLS */
