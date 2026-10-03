@@ -1022,10 +1022,12 @@ input[type="email"]:not(:placeholder-shown) {
         margin: 30px 0 0;
     }
 }
-
-
-
-
-
-
 /* end subscribe */
+
+/* CONTACT-US STYLING */
+.contact-us {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+
