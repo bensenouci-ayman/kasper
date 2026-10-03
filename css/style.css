@@ -933,4 +933,99 @@ header .search-field i {
 
 /* end plans */
 
+/* start subscribe */
 
+
+.subscribe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url('../images/subscribe.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+/* adding an overlay */
+.subscribe::before {
+    content: '';
+    position: absolute;        
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / .5);
+}
+
+.subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+}
+
+.subscribe form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    /* for mobile screen */
+    max-width: 100%;
+}
+
+.subscribe form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.subscribe form input[type="email"] {
+    padding: 20px 20px 20px 60px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: none;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+
+}
+.subscribe form input[type="submit"] {
+    width: 130px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    border-left: none;
+}
+
+.subscribe form input[type="email"]::placeholder,
+input[type="email"]:not(:placeholder-shown) {
+    color: white;
+}
+
+/* focus reset */
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus {
+    outline: none;
+}
+
+.subscribe form + p {
+    line-height: 2;
+    margin-left: 50px;
+}
+@media (max-width: 992px) {
+    .subscribe form + p {
+        text-align: center;
+        margin: 30px 0 0;
+    }
+}
+
+
+
+
+
+
+/* end subscribe */
