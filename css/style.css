@@ -837,20 +837,12 @@ header .search-field i {
 .pricing {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-}
-/* end pricing */
-
-/* start plans */
-
-
-
-.plans {
-    padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
     text-align: center;
 }
 
-.plans .container {
+/* start plans */
+
+.pricing .plans {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
@@ -888,7 +880,7 @@ header .search-field i {
 
 .plans .plan .head span::after {
     content: '/Mo';
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     bottom: 0;
     right: -15px;
@@ -896,6 +888,7 @@ header .search-field i {
 
 .plans ul {
     list-style: none;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .plans ul li {
@@ -903,7 +896,7 @@ header .search-field i {
     position: relative;
 }
 
-.plans ul li::after {
+.plans ul li:not(:last-child)::after {
     content: '';
     width: 100px;
     height: 1px;
@@ -923,23 +916,21 @@ header .search-field i {
     margin: 30px auto;
 }
 
-.plans p:last-of-type{
+.pricing .plans + p {
     margin: 50px auto 20px;
     font-size: 20px;
 }
 
-.plans a.contact-link {
+.pricing a.contact-link {
     display: block;
     text-decoration: none;
     width: fit-content;
     background-color: var(--main-color);
     color: white;
-    padding: 15px 30px;
-    margin: 20px auto;
+    padding: 20px;
+    margin: 30px auto;
 }
 
-
-
-
-
 /* end plans */
+
+
