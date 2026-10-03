@@ -832,3 +832,114 @@ header .search-field i {
 }
 /* end quote */
 
+/* start pricing */
+
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+/* end pricing */
+
+/* start plans */
+
+
+
+.plans {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+
+.plans .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.plans .plan {
+    background-color: #fcfcfc;
+}
+
+.plans .plan .head {
+    padding: 20px 40px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.plans .plan .head h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.plans .plan .head span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.plans .plan .head span::before {
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.plans .plan .head span::after {
+    content: '/Mo';
+    font-size: 25px;
+    position: relative;
+    bottom: 0;
+    right: -15px;
+}
+
+.plans ul {
+    list-style: none;
+}
+
+.plans ul li {
+    padding: 20px;
+    position: relative;
+}
+
+.plans ul li::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.plans .foot a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.plans p:last-of-type{
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.plans a.contact-link {
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 30px;
+    margin: 20px auto;
+}
+
+
+
+
+
+/* end plans */
