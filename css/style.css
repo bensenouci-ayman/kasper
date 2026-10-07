@@ -1030,6 +1030,92 @@ input[type="email"]:not(:placeholder-shown) {
     padding-bottom: var(--section-padding);
 }
 
+.contact-us .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .contact-us .content {
+        flex-direction: column;
+    }
+}
+
+.contact-us .content form {
+    flex-basis: 70%;
+}
+
+.contact-us form .main-input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+
+.contact-us form .main-input:focus {
+    outline: none;
+}
+
+.contact-us form textarea.main-input {
+    height: 200px;
+}
+
+.contact-us form input[type="submit"] {
+    background-color: var(--main-color);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.contact-us .content .info {
+    flex-basis: 25%;
+    text-align: start;
+}
+@media (max-width: 767px) {
+    .contact-us .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+
+.contact-us .info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-us .info h4:last-of-type {
+    margin: 90px 0 30px;
+}
+@media (max-width: 767px) {
+    .contact-us .info h4:last-of-type {
+        margin-top: 30px;
+    }
+}
+
+.contact-us .info span.phone,
+.contact-us .info address {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contact-us .info address {
+    font-style: italic;
+    line-height: 2;
+}
+@media (max-width: 767px) {
+    .contact-us .info address {
+        margin-bottom: 40px;
+    }
+}
+
+
 
 
 
